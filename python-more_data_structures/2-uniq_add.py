@@ -7,4 +7,3 @@ def uniq_add(my_list=[]):
             data.append(i)
             result += int(i)
     return result
-            
