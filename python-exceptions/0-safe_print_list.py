@@ -2,11 +2,10 @@
 def safe_print_list(my_list=[], x=0):
     j = 0
     try:
-        for i in range(0, x) :
+        for i in range(0, x):
             print("{:d}".format(my_list[i]), end="")
             j += 1
         print("")
-        return j
-    except:
+    except IndexError:
         print("")
-        return j
+    return j
