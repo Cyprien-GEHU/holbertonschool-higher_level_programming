@@ -16,5 +16,7 @@ def text_indentation(text):
         if text[t] in chara:
             print(text[t])
             print("")
+        elif (text[t-1] in chara or text[t-1] == " ") and text[t] == " ":
+            pass
         else:
             print(text[t], end="")
