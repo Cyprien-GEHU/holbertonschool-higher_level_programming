@@ -1,0 +1,16 @@
+>>> text = __import__('5-text_indentation').text_indentation
+
+>>> print(text())
+Traceback (most recent call last):
+TypeError: text_indentation() missing 1 required positional argument: 'text'
+
+>>> print(text(9))
+Traceback (most recent call last):
+TypeError: text must be a string
+
+>>> print("bonjour je suis la")
+bonjour je suis la
+
+>>> print("vous etes ?")
+vous etes ?
+
