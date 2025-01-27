@@ -2,6 +2,7 @@
 '''
 We write a class square:
 size : the private attribue
+return: the size of square
 '''
 
 
