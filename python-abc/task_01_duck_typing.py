@@ -1,9 +1,18 @@
 #!/usr/bin/python3
+"""
+the programm found the shape:
+- trinagle with height and width
+- circle with radius
+- shape_info for print the area and perimeter
+"""
 from abc import ABC, abstractmethod
 import math
 
 
 class Shape(ABC):
+    """
+    the class Shape
+    """
     @abstractmethod
     def area(self):
         pass
@@ -14,6 +23,9 @@ class Shape(ABC):
 
 
 class Circle(Shape):
+    """
+    The class circle
+    """
     def __init__(self, radius):
         self.__radius = radius
 
@@ -25,6 +37,9 @@ class Circle(Shape):
 
 
 class Rectangle(Shape):
+    """
+    the class Rectangle
+    """
     def __init__(self, height, width):
         self.__height = height
         self.__width = width
@@ -37,5 +52,8 @@ class Rectangle(Shape):
 
 
 def shape_info(Shape):
+    """
+    the function shape_info
+    """
     print("Area: {}".format(Shape.area()))
     print("Perimeter: {}".format(Shape.perimeter()))
