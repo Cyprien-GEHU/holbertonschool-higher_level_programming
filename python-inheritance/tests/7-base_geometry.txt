@@ -1,0 +1,22 @@
+>>> BG = __import__('7-base_geometry').BaseGeometry
+
+>>> BG.integer_validator(BG,"mes", 0)
+Traceback (most recent call last):
+ ...
+ValueError: mes must be greater than 0
+
+>>> BG.integer_validator(BG,"mes")
+Traceback (most recent call last):
+ ...
+TypeError: BaseGeometry.integer_validator() missing 1 required positional argument: 'value'
+
+>>> BG.integer_validator(BG)
+Traceback (most recent call last):
+ ...
+TypeError: BaseGeometry.integer_validator() missing 2 required positional arguments: 'name' and 'value'
+
+>>> BG.integer_validator(BG, 1, "salut")
+Traceback (most recent call last):
+ ...
+TypeError: 1 must be an integer
+
