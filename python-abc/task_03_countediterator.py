@@ -9,8 +9,8 @@ class CountedIterator:
     the class CountedIterator
     """
     def __init__(self, item):
-        self.__count = 0
         self.iterator = iter(item)
+        self.__count = 0
 
     def __next__(self):
         item = next(self.iterator)
