@@ -11,17 +11,17 @@ class VerboseList(list):
     class VerboseList
     """
     def append(self, item):
-        super().append(item)
         print("Added [{}] to the list".format(item))
+        super().append(item)
 
-    def extend(self, item):
-        super().extend(item)
-        print("Extended the list with [{}] items.".format(len(item)))
+    def extend(self, items):
+        print("Extended the list with [{}] items.".format(len(items)))
+        super().extend(items)
 
     def remove(self, item):
-        super().remove(item)
         print("Removed [{}] from the list.".format(item))
+        super().remove(item)
 
     def pop(self, item=-1):
-        item = super().pop(item)
         print("Popped [{}] from the list.".format(item))
+        item = super().pop(item)
