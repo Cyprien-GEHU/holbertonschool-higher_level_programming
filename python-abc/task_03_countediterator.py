@@ -11,10 +11,10 @@ class CountedIterator:
     def __init__(self, item):
         self.__count = 0
         self.iterator = iter(item)
-        
+
     def __next__(self):
-        self.__count += 1
         item = next(self.iterator)
+        self.__count += 1
         return item
 
     def get_count(self):
