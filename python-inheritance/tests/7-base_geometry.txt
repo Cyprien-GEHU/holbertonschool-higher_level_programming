@@ -63,3 +63,7 @@ TypeError: bool must be an integer
 >>> bg.area()
 Traceback (most recent call last):
 Exception: area() is not implemented
+
+>>> bg.integer_validator("mes")
+Traceback (most recent call last):
+TypeError: integer_validator() missing 1 required positional argument: 'value'
