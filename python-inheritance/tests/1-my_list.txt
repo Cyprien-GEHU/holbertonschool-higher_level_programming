@@ -77,3 +77,6 @@ TypeError: '<' not supported between instances of 'str' and 'int'
 
 >>> lst6.print_sorted()
 [-8.2, -3, 7, 15]
+
+>>> print(lst6)
+[-3, 7, -8.2, 15]
