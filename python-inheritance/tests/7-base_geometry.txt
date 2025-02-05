@@ -34,7 +34,7 @@ TypeError: BaseGeometry.integer_validator() missing 2 required positional argume
 
 >>> bg.integer_validator("coucou", 1, 4)
 Traceback (most recent call last):
-TypeError: integer_validator() takes 3 positional arguments but 4 were given
+TypeError: BaseGeometry.integer_validator() takes 3 positional arguments but 4 were given
 
 >>> bg.integer_validator(1, "salut")
 Traceback (most recent call last):
@@ -68,7 +68,7 @@ TypeError: testout must be an integer
 Traceback (most recent call last):
 TypeError: E must be an integer
 
->>> bg.integer_validator("bool", false)
+>>> bg.integer_validator("bool", False)
 Traceback (most recent call last):
 TypeError: bool must be an integer
 
