@@ -1,0 +1,13 @@
+###
+0-read_file.py: write an function read a text file and print it to stdout
+1-write_file.py: The function writes a string to a text file and returns the number of characters written
+2-append_write.py: The function appends a strinf at the end of a text file and returns the number of character added
+3-to_json_string.py: The function return the JSON representation of an object(string)
+4-from_json_string.py: The function returns an object represented by a JSON string
+5-save_to_json_file.py: The function wirtes an Object to a text file, using a JSON representation
+6-load_from_json_file.py: The function creates an object from a "JSON file"
+7-add_item.py: The script adds all arguments to a Python list and save them to a file
+8-class_to_json.py: The function retunrs the dictionary description with simple data structure for JSON serialization of an object
+9-student.py: Write a class Student
+10-student.py: write a class Student (based on task 9)
+11-student.py: write a class Student (based on task 10)
