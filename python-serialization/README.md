@@ -1,0 +1,4 @@
+- task_00_basic_serialization.py: write a python module
+- task_01_pickle.py: serialize and deserialize custom python with pickle
+- task_02_csv.py: reading data from one format (CSV) to JSON format
+- task_03_xml.py: reading data using XML as an alternative format JSON
