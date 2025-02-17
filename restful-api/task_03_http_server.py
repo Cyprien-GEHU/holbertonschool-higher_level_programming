@@ -44,15 +44,16 @@ class Handler_API(BaseHTTPRequestHandler):
             self.send_response(404)
             self.send_header("Content-type", "text/plain")
             self.end_headers()
-            self.wfile.write(b"Endpoint not found")
+            self.wfile.write(b"404 Not Found")
 
 
-def run(server_class=HTTPServer, handler_class=Handler_API):
+def run(server_class=HTTPServer, handler_class=Handler_API, port=8000):
     """
     the function run
     """
-    server_address = ('', 8000)
+    server_address = ('', port)
     httpd = server_class(server_address, handler_class)
+    print("Serve on port {}".format(port))
     httpd.serve_forever()
 
 
