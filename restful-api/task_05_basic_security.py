@@ -84,7 +84,7 @@ def admin():
         return jsonify({"error": "User not found"}), 404
 
     if users[cur_user]['role'] == "admin":
-        return "admin Acess: Grantred"
+        return "Admin Access: Granted"
 
     return jsonify({"error": "Admin access required"}), 403
 
