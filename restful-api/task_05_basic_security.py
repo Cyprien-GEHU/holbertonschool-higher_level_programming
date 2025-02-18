@@ -60,7 +60,7 @@ def login():
         token = create_access_token(identity=username)
         return jsonify(acces_token=token), 200
 
-    return jsonify({"message": "Wrong username or password"})
+    return jsonify({"message": "Bad username or password"})
 
 
 @app.route("/basic-protected", methods=['GET'])
