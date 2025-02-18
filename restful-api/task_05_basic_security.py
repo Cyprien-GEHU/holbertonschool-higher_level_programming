@@ -14,7 +14,7 @@ from flask_jwt_extended import JWTManager, create_access_token
 
 app = Flask(__name__)
 auth = HTTPBasicAuth()
-app.config['SECRET_KEY'] = 'your_secret_key'
+app.config['JWT_SECRET_KEY'] = 'your_secret_key'
 jwt = JWTManager(app)
 
 
@@ -60,7 +60,7 @@ def login():
         token = create_access_token(identity=username)
         return jsonify(acces_token=token), 200
 
-    return jsonify({"message": "Bad username or password"})
+    return jsonify({"message": "Bad username or password"}), 401
 
 
 @app.route("/basic-protected", methods=['GET'])
@@ -76,7 +76,7 @@ def jwt_protected():
 
 
 @app.route("/admin-only", methods=['GET'])
-@auth.login_required
+@jwt_required()
 def admin():
     cur_user = get_jwt_identity()
 
