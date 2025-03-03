@@ -1,0 +1,17 @@
+- 0-list_databases.sql: the script will lists all databases
+- 1-create_database_if_missing.sql: the script will creates the database hbtn_0c_0
+- 2-remove_database.sql: the script deletes the database htbn_0c_0
+- 3-list_tables.sql: the script will list all the tables of a database
+- 4-first_table.sql: the script will creates the tables first_table
+- 5-full_table.sql: the script will print the description of the tables first_table from the database htbn_0c_0
+- 6-list_values.sql: the script will list all row of the table first_table
+- 7-insert_value.sql: the script will insert a new row in the table first_table
+- 8-count_89.sql: the script displays the number of records with "id = 98" in the tables first_table
+- 9-full_creation.sql: the script will creates a table second_table in the database
+- 10-top_score.sql: the script will list all records of the table second_table of the database
+- 11-best_score.sql: the script will list all records with a score >= 10 in the table second_table of the database
+- 12-no_cheating.sql: the script will updates the score of bob to 10 to the tables second_table
+- 13-change_class.sql: the script will removes all records with a score <= 5 int the table second_table
+- 14-average.sql: the script will computes the score average of all records in the tables second_table of the database
+- 15-groups.sql: the script will lists the number of records with the same scoe in the table second_table
+- 16-no_link.sql: the script list all records of the table second_table of the database
