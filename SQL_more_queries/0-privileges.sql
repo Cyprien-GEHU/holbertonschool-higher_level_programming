@@ -1,0 +1,1 @@
+-- list all privileges of the mysql
