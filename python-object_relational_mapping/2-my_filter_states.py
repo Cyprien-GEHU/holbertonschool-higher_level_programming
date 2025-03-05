@@ -23,4 +23,3 @@ if __name__ == "__main__":
             print(row)
     curs.close()
     db.close()
-    
