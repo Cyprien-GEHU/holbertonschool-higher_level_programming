@@ -1,1 +1,4 @@
 *.sql
+6-model_state.py
+env
+__pycache__
