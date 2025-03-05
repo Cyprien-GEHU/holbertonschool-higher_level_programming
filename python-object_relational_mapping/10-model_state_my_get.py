@@ -15,10 +15,9 @@ if __name__ == '__main__':
     Session = sessionmaker(engine)
     session = Session()
 
-    first = session.query(State).filter(State.name == sys.argv[4])\
-        .order_by(State.id).first()
-    if first:
-        print("{}".format(first.id))
+    states = session.query(State).filter(State.name == sys.argv[4]).first()
+    if states:
+        print(states.id)
     else:
         print("Not Found")
     session.close()
