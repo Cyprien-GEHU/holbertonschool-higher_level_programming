@@ -9,12 +9,12 @@ def home():
     return render_template('index.html')
 
 @app.route('/items')
-def item():
+def items():
     with open('items.json') as j_file:
         data = json.load(j_file)
-        list_items = data.get("items", [])
+        items_list = data.get('items', [])
 
-    return render_template('items.html', items=list_items)
+    return render_template('items.html', items=items_list)
 
 @app.route('/about')
 def about():
