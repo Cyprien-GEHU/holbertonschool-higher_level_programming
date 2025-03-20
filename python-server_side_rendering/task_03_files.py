@@ -58,6 +58,8 @@ def products():
         products = file_json('products.json')
     elif origin == "csv":
         products = file_csv('products.csv')
+    elif origin == "sql":
+        pass
     else :
         return render_template('product_display.html', msgerror ="Wrong source")
     
