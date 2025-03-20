@@ -53,7 +53,7 @@ def contact():
 @app.route('/products')
 def products():
     origin = request.args.get('source')
-    product_id = request.args.get('id, type=int')
+    product_id = request.args.get('id', type=int)
     if origin == "json":
         products = file_json('products.json')
     elif origin == "csv":
